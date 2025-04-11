@@ -1,7 +1,12 @@
 import armas.*
 object luisa {
+  var personajeActivo = floki
+
+  method setPersonajeActivo(personaje) {
+    personajeActivo = personaje
+  }
   method aparece(elemento) {
-    
+    personajeActivo.setElemento(elemento)
   }
 }
 //personajes
